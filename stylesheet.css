@@ -1,0 +1,275 @@
+body{
+    margin: auto;
+}
+
+.nav-wrapper{
+    background-color: #ffff;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-shadow: 3px 5px 5px 6px #ccc;
+    z-index: 1;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav{
+    width: 100%;
+}
+
+.icon{
+    width: 50%;
+}
+
+#icon-text{
+    float: left;
+    font-size: 25px;
+    font-weight: bold;
+    width: 60px;
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-top: 2%;
+}
+
+#icon-img{
+    float: left;
+    width: 150px;
+}
+
+.nav-list{
+    float: right;
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.nav-list li{
+    padding-top: 25px;
+}
+
+.nav-list li a{
+    display: inline;
+    color: #1b91db;
+}
+
+.employees{
+    margin-left:1.5%;
+}
+
+.employee-list{
+    list-style: none;
+    display: inline-flex;
+    padding-bottom: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: #edeeef;
+    border-radius: 10px;
+    border-style: hidden;
+    justify-content: space-around;
+}
+
+.employee-card{
+    display:flex;
+    flex-wrap: wrap;
+    background-color: white;
+    border-style: hidden;
+    border-radius: 10px;
+    max-width: 100%;
+    margin: 20px;
+    padding: 15px;
+    box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+.user-img{
+    float: left;
+    border-radius: 100px;
+    width: 84px;
+    height: 84px;
+    border-style: solid;
+    border-color: #1b91db;
+    border-width: 2px;
+}
+
+.employment-details{
+    display: block;
+    float: right;
+    margin-left: 20px;
+}
+
+.interviews{
+    margin: 1.5%;
+    width: 30%;
+    list-style: none;
+    background-color: #edeeef;
+    border-style: hidden;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.list-item{
+    background-color: white;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px 6px #ccc;
+    border-style: hidden;
+    font-size: 18px;
+}
+
+.accept-btn{
+    background-color: #36bc65;
+    width: auto;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 1% 2% 0% 0%;
+    padding: 8px 12px;
+    display: inline-block;
+}
+
+.reject-btn{
+    background-color: red;
+    width: auto;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 1% 2% 0% 0%;
+    padding: 8px 12px;
+    display: inline-block;
+}
+
+#employeeModal{
+    text-align: center;
+    width: 30%;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    background-color: white;
+}
+
+.modal-header{
+    border-radius: 10px 10px 0px 0px;
+    background-color: #1b91db;
+}
+
+.modal-header-content{
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+label{
+    color: #1b91db;
+    font-weight: bold;
+}
+
+input{
+   width: 50%;
+   padding: 12px 20px;
+   margin: 8px 0px;
+   display: inline-block;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+}
+
+#confirmBtn{
+    float: right;
+    margin: 30px;
+    width: auto;
+    background-color: #36bc65;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+#cancelBtn{
+    float: right;
+    margin: 30px;
+    width: auto;
+    background-color: red;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+#interviewModal{
+    text-align: center;
+    width: 30%;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    background-color: white;
+}
+
+#confirmIntBtn{
+    float: right;
+    padding: 8px 12px;
+    width: auto;
+    color: white;
+    background-color: #36bc65;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    margin: 30px;
+    font-size: 16px;
+}
+
+#cancelIntBtn{
+    float: right;
+    margin: 30px;
+    width: auto;
+    background-color: red;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.btn{
+    float: right;
+    background-color: #1b91db;
+    width: auto;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 2%;
+}
